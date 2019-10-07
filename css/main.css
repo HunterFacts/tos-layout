@@ -26,6 +26,12 @@ main {
     padding: 2rem 0;
     min-height: calc(100vh - 401px);
 }
+
+section h3, section h2  {
+    font-weight:  bold;
+    margin-bottom: 2rem;
+}
+
 section#main {
     min-height: calc(100vh - 150px);
     /*display: flex;*/
@@ -34,6 +40,44 @@ section#main {
 section#main>div{
     position: relative;
     top: 50%;
+}
+section#news {
+    min-height: calc(100vh - 150px);
+    background-color: #eeeeee;
+}
+section#news .card {
+    padding: 0;
+}
+section#news .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating){
+    color: #039be5;
+}
+section#usefulLinks {
+    min-height: calc(100vh - 150px);
+}
+section#usefulLinks .useful-link:hover .card-panel{
+    background-color: #021B79;
+    color: white;
+    transition: 0.5s;
+}
+section#usefulLinks .useful-link {
+    color: black;
+}
+section#usefulLinks .useful-link .card-panel{
+    color: black;
+    min-height: 200px;
+    position: relative;
+    background-color: #eceff1;
+    transition: 0.5s;
+}
+section#usefulLinks .useful-link .card-panel .useful-icon{
+    position: absolute;
+    bottom: 15px;
+    right: 25px;
+}
+body .btn {
+    background: #01579b;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #021B79, #01579b);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #021B79, #01579b); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 footer, .page-footer {
     /*position: absolute;
@@ -100,6 +144,12 @@ footer, .page-footer {
 .collapsible {
     box-shadow: none;
 }
+a.small-for-icon {
+    line-height: 28px;
+}
+.news-a {
+    margin-top: 20px;
+}
 .status-text {
     position: absolute;
     background: #0575E6;
@@ -108,6 +158,35 @@ footer, .page-footer {
     left: 15px;
     border-radius: 20px;
     padding: 5px 10px;
+}
+.new {
+    margin: 1rem 0 3rem 0;
+}
+.new .new-header {
+    line-height: 40px;
+    position: relative;
+}
+.new .new-header img{
+    margin-right: 10px;   
+}
+.new .new-header .right-new-header{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.new .pre-new-header {
+    margin-top: 0.4rem;
+    font-size: 12px;
+    color: #01579b;
+}
+.new .new-img {
+    margin-top: 0.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.pagination li.active {
+    background-color: #01579b;
 }
 @media only screen and (min-width: 601px){
     #searchNav, #searchNav .nav-wrapper i, #searchNav a.sidenav-trigger, #searchNav a.sidenav-trigger i {

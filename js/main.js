@@ -1,6 +1,8 @@
 $(document).ready(function(){
     $('.collapsible').collapsible();
     $(".dropdown-trigger").dropdown();
+    $('.modal').modal();
+    $('.materialboxed').materialbox();
     (function(){
         var date = new Date();
         let days = date.getDay().toString().length == 1 ? '0'+date.getDay():  date.getDay(), 
