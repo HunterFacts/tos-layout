@@ -1,8 +1,35 @@
 $(document).ready(function(){
+    $('#mainNav li .main-link').click(function(event){
+        event.preventDefault();
+        linkLocation = this.href;
+        $("body").fadeOut(600, redirectPage);
+    });
+    $('.tabs').tabs();
+    function redirectPage() {
+        window.location = linkLocation;
+    }
     $('.collapsible').collapsible();
-    $(".dropdown-trigger").dropdown();
+    $(".dropdown-trigger").dropdown({
+        constrainWidth: false
+    });
     $('.modal').modal();
     $('.materialboxed').materialbox();
+    $('.sidenav').sidenav();
+    let preloaderChecker = true;    
+    window.onload = function() {
+        if (preloaderChecker){
+            $('.preloader').fadeOut();
+            preloaderChecker = false;
+        }      
+    };
+
+    window.setTimeout(function (){
+        if (preloaderChecker){
+            $('.preloader').fadeOut();
+            preloaderChecker = false;
+        }
+    }, 1000);
+
     (function(){
         var date = new Date();
         let days = date.getDay().toString().length == 1 ? '0'+date.getDay():  date.getDay(), 

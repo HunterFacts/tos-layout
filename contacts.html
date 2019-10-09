@@ -12,6 +12,19 @@
     <title>Контакты ТОС "Троица"</title>
 </head>
 <body> 
+<div class="preloader">
+        <div class="preloader-wrapper big active">
+            <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                    <div class="circle"></div>
+                </div><div class="gap-patch">
+                    <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 <nav id="searchNav">
     <div class="nav-wrapper">
         <div class='row'>
@@ -43,6 +56,25 @@
     <li class="divider"></li>
     <li><a href="#!">Пункт 2</a></li>
 </ul>
+<ul id="dropdown2" class="dropdown-content">
+    <li><a class="main-link" href="doings.html">Общественный контроль</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Письма исходящие</a></li>
+    <li><a href="#!">Письма входящие</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Судебные дела</a></li>
+    <li><a href="#!">Градостроительство и землепользование</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Генеральный план</a></li>
+    <li><a href="#!">ПЗЗ (правила землепользование и застройки)</a></li>
+    <li><a href="#!">"Болевые точки" на карте Троицы</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Конкурсы, гранты</a></li>
+    <li class="divider"></li>
+    <li><a href="#!">Президентсткий грант 2018г</a></li>
+    <li><a href="#!">Заявки на конкурсы и гранты</a></li>
+    <li><a href="#!">Иниципативное бюджетирование</a></li>
+</ul>
 <nav id="mainNav">
     <div class="nav-wrapper">
         <a href="#!" class="brand-logo">
@@ -50,11 +82,13 @@
             <div class="text-logo">Территориальное общественное самоуправление "Троица"</div>
         </a>
         <ul class="right hide-on-med-and-down">
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="about.html">О нас</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="gallery.html">Галерея</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
+            <li><a class="main-link" href="index.html">Главная</a></li>
+            <li><a class="main-link" href="about.html">О нас</a></li>
+            <li><a class="dropdown-trigger" href="#!" data-target="dropdown2">Наши дела<i class="material-icons right">arrow_drop_down</i></a></li>
+            <li><a class="main-link" href="help.html">Как нам помочь</a></li>
+            <li><a class="main-link" href="news.html">Новости</a></li>
+            <li><a class="main-link" href="gallery.html">Галерея</a></li>
+            <li><a class="main-link" href="contacts.html">Контакты</a></li>
         <!-- Dropdown Trigger -->
         <li><a class="dropdown-trigger" href="#!" data-target="dropdown1">Прочее<i class="material-icons right">arrow_drop_down</i></a></li>
         </ul>
