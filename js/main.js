@@ -15,6 +15,7 @@ $(document).ready(function(){
     $('.modal').modal();
     $('.materialboxed').materialbox();
     $('.sidenav').sidenav();
+    $('select').formSelect();
     let preloaderChecker = true;    
     window.onload = function() {
         if (preloaderChecker){

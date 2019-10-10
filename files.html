@@ -158,76 +158,66 @@
     <div class="row">
         <section id="main" class="col s12 m8 offset-m2">
             <div class="row">
-                <div class="col s7">
-                    <h5>Поиск по значению: Праздник в троице</h5>
-                    <h6>Найдено 1 совпадение</h6>
-                    <hr>
-                    <div class="new">
-                        <div class="valign-wrapper new-header">
-                            <img src="img/40.png" alt="" class="circle responsive-img"> <!-- notice the "circle" class -->
-                            <span class="light-blue-text text-darken-1">
-                                Администратор
-                            </span>
-                            <div class="light-blue-text text-darken-4 right-new-header">
-                                сегодня в 16:30
-                            </div>                               
-                        </div>
-                        <h4>В Троице скоро праздник!</h4>
-                        <div class="pre-new-header">                             
-                            троица, праздник
-                        </div>
-                        <div class="new-img">
-                            <img src="img/600x400.png" alt="" class="responsive-img">
-                        </div>
-                        <p>
-                            В троице состоиться праздник, он намечается на 07.10.2019
-                        </p>   
-                        <a href="new.html" class="waves-effect btn">Читать дальше -></a>              
-                    </div>                 
-                    <hr>
-                    <ul class="pagination">
-                        <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
-                        <li class="active"><a href="#!">1</a></li>
-                        <li class="waves-effect"><a href="#!">2</a></li>
-                        <li class="waves-effect"><a href="#!">3</a></li>
-                        <li class="waves-effect"><a href="#!">4</a></li>
-                        <li class="waves-effect"><a href="#!">5</a></li>
-                        <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
-                    </ul>
-                </div>
-                <div class="col s5">
+                <div class="col s12">
                     <ul class="collapsible">
-                        <li class="active">
-                            <div class="collapsible-header"><i class="material-icons">date_range</i>Дата и время</div>
-                            <div class="collapsible-body"><span id="actuallyTime"></span></div>
-                        </li>
                         <li>
-                            <div class="collapsible-header"><i class="material-icons">cloud</i>Погода</div>
+                            <div class="collapsible-header"><i class="material-icons">filter_list</i>Сортировка</div>
                             <div class="collapsible-body">
-                                <span>
-                                    <div id="cont_ee213955d8e9e668a540687fc6c8683c"><script type="text/javascript" async src="https://www.pogoda.com/wid_loader/ee213955d8e9e668a540687fc6c8683c"></script></div>
-                                </span>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="collapsible-header"><i class="material-icons">directions_bus</i>Расписание автобусов</div>
-                            <div class="collapsible-body">
-                                <span>
-                                    
-                                    <a class="waves-effect waves-light btn modal-trigger" href="#modalTimeTablePT">Из Перми - в Троицу</a><br><br>
-                                    <a class="waves-effect waves-light btn modal-trigger" href="#modalTimeTableTP">Из троицы в пермь</a><br><br>
-                                </span>
+                                <div class="row">
+                                    <div class="input-field col s8">
+                                        <select>
+                                            <option value="" disabled selected>Не выбрано</option>
+                                            <option value="1">Excel</option>
+                                            <option value="2">Word</option>
+                                            <option value="3">TXT</option>
+                                        </select>
+                                        <label>Расширение файла</label>
+                                    </div>
+                                    <div class="col s4"><button style="margin: 2rem 0.5rem 0 1rem;" class="btn waves-effect">Применить сортировку</button></div>
+                                </div>
                             </div>
                         </li>
                     </ul>
-                    <h5>Мы в других сетях</h5>
-                    <div class="social-icons">
-                        <a class="social-icon"><img class="responsive-img" src="img/icon-vk2.png"></a>
-                        <a class="social-icon"><img class="responsive-img" src="img/icon-inst2.png"></a>
-                        <a class="social-icon"><img class="responsive-img" src="img/icon-fb2.png"></a>
-                        <a class="social-icon"><img class="responsive-img" src="img/icon-yt2.png"></a>
-                    </div>
                 </div>
+                <table>
+                    <thead>
+                            <tr>
+                                <th>Номер документа</th>
+                                <th>Название документа</th>
+                                <th>Расширение документа</th>
+                                <th>Дата документа</th>
+                                <th>Файл</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Документ 1</td>
+                                <td>Excel</td>
+                                <td>23.09.2019</td>
+                                <td>document.xlsm</td>
+                                <td><button class="waves-effect btn">Открыть</button></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Документ 1</td>
+                                <td>Excel</td>
+                                <td>23.09.2019</td>
+                                <td>file.xlsm</td>
+                                <td><button class="waves-effect btn">Открыть</button></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Документ 3</td>
+                                <td>Word</td>
+                                <td>23.09.2019</td>
+                                <td>winter.doc</td>
+                                <td><button class="waves-effect btn">Открыть</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
             </div>
         </section>          
     </div>
